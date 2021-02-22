@@ -1,19 +1,18 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: recruitment-service-deployment
+  name: project-deployment
   namespace: development
   labels:
-    app: recruitment-service-app
+    app: project-app
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
-        apps: recruitment-service
+        apps: project
     spec:
       containers:
-      - name: recruitment-service
-        image: gcr.io/bats-qa/recruitment-service:development
+      - name: project
         ports:
         - containerPort: 8081
