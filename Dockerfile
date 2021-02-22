@@ -12,9 +12,9 @@ RUN apt-get install -y maven
 WORKDIR /code
 
 #Copy the SRC, LIB and pom.xml to WORKDIR
-ADD pom.xml /code/pom.xml
-ADD lib /code/lib
-ADD src /code/src
+#ADD pom.xml /code/pom.xml
+#ADD lib /code/lib
+#ADD src /code/src
 
 #Build the code
 RUN ["mvn", "clean"]
