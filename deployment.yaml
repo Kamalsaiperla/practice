@@ -14,5 +14,6 @@ spec:
     spec:
       containers:
       - name: project
+        image: pkamalsai/helloworld
         ports:
         - containerPort: 8081
